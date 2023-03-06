@@ -48,3 +48,7 @@ button {
 	margin-bottom: 1em;
 	box-shadow: 2px 2px 5px 0px #828181;
 }
+
+button#clear {
+	background-color: rgb(217, 43, 43);
+}

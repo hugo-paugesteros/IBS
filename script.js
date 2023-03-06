@@ -1,4 +1,5 @@
-const button 	= document.querySelector('#button')
+const clearButton 	= document.querySelector('#clear')
+const addButton 	= document.querySelector('#add')
 
 var memory = [
 	"Mon Mar 06 2023 9:28:14 GMT+0100 (Central European Standard Time)",
@@ -17,7 +18,12 @@ memory.forEach(date => {
 	addDate(date)
 })
 
-button.addEventListener('click', (e) => {
+clearButton.addEventListener('click', (e) => {
+	// localStorage.flareups = JSON.stringify([])
+	localStorage.clear()
+})
+
+addButton.addEventListener('click', (e) => {
 	const date = Date()
 	memory.push(date)
 	localStorage.flareups = JSON.stringify(memory)

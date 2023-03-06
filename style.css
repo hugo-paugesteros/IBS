@@ -1,0 +1,49 @@
+html, body {
+	margin: 0;
+	padding:0;
+}
+
+body{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: end;
+}
+
+svg {
+	height: 100vh;
+}
+
+svg .line {
+	stroke-width: .1;
+	stroke: black;
+}
+
+svg .now {
+	stroke-width: .1;
+	stroke: rgba(255, 0, 0, .7);
+}
+
+svg .label {
+	/* text-anchor: middle; */
+	dominant-baseline: mathematical;
+	alignment-baseline: mathematical;
+	font-size: 2.5px;
+}
+
+svg circle {
+	fill: rgba(0, 0, 0, .7)
+}
+
+button {
+	display: block;
+	width: 50px;
+	height: 50px;
+	outline: none;
+	border: none;
+	background-color: #09a1ff;
+	color: white;
+	font-size: 20px;
+	border-radius: 50%;
+	margin-bottom: 1em;
+	box-shadow: 2px 2px 5px 0px #828181;
+}
